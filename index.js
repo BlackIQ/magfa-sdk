@@ -1,1 +1,3 @@
-module.exports = require("./lib/magfa");
+import MagFa from "./lib/magfa.js";
+
+export default MagFa;
