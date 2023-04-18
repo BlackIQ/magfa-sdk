@@ -1,8 +1,9 @@
 {
   "name": "magfa-sdk",
-  "version": "1.0.0",
+  "version": "2.2.1",
   "description": "MagFa SMS System SDK",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "lib": "lib"
   },
