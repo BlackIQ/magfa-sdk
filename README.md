@@ -45,15 +45,13 @@ This SDK has 3 main methods.
 Balance just return you how much money your account has.
 
 ```javascript
-const balance = sms.balance();
+const balance = await sms.balance();
 
-balance.then((result) => {
-    if (result.status === 0) {
-        console.log(`Balance is ${result.balance}`);
-    } else {
-        console.log(`Can not read balance with status ${result.status}.`);
-    }
-});
+if (balance.status === 0) {
+  console.log({ balance: balance.balance });
+} else {
+  console.log({ message: sms.error(balance.status) });
+}
 ```
 
 #### Messages
@@ -61,15 +59,13 @@ balance.then((result) => {
 To get input messages use this method.
 
 ```javascript
-const messages = sms.messages();
+const messages = await sms.messages();
 
-messages.then((result) => {
-    if (result.status === 0) {
-        console.log(result.messages);
-    } else {
-        console.log(`Can not get messages with status ${result.status}.`);
-    }
-});
+if (messages.status === 0) {
+  console.log(messages.messages);
+} else {
+  console.log({ message: sms.error(messages.status) });
+}
 ```
 
 #### Send
@@ -77,18 +73,38 @@ messages.then((result) => {
 Now you want to send a message, or many messages. Ok, have fun with this method!
 
 ```javascript
-const recipients = [ "0901xxxxxxx", "0936xxxxxxx", "0912xxxxxxx", "0919xxxxxxx" ];
-const messages = [ "Hello", "How are your?", "JavaScript", "Python is trash" ];
+const recipients = ["09014784362", "09363158232"];
+const messages = ["Hey", "Hi"];
 
-const send = sms.send(recipients, messages);
+const send = await sms.send(recipients, messages);
 
-send.then((result) => {
-    if (result.status === 0) {
-        console.log("Sent");
-    } else {
-        console.log(`Did not send with status ${result.status}.`);
-    }
-});
+if (send.status === 0) {
+  console.log(send.messages);
+} else {
+  console.log({ message: sms.error(send.status) });
+}
+```
+
+#### Status
+
+When you send a message, you will check that is message arrived or not or anything like this. So, use status method that return you the status of the message.
+
+```javascript
+const status = await sms.status("120990667412");
+
+if (status.status === 0) {
+  console.log(status.dlrs);
+} else {
+  console.log({ message: sms.error(status.status) });
+}
+```
+
+#### Error
+
+Magfa has some errors and we created an error method that get code from you and return the message.
+
+```javascript
+const message = sms.error("status code");
 ```
 
 ## Development
@@ -98,10 +114,10 @@ If you want to develop the package, it is so simple. just follow steps below.
 - Clone the project
 - Install dependencies by running `$ npm install`
 - Start changing!
-    - Link package
-    - Test
+  - Link package
+  - Test
 
-> Before you start: **Remember the base or code are stored in `lib/magfa.js`. You need to edit there.
+> Before you start: \*\*Remember the base or code are stored in `lib/magfa.js`. You need to edit there.
 
 ### Cloning the project
 
@@ -144,3 +160,13 @@ Linking step is done.
 #### Test
 
 Your test app is linked. Change anything in package and test it in `test` directory.
+
+## Change log
+
+### Version 2.2.1
+
+- Added `status` method.
+- Added `error` method.
+- Added new functionalities.
+- Clean code and better architect.
+- Using Async/Await methods.
