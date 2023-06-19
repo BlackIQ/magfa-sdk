@@ -1,20 +1,25 @@
 import MagFa from "magfa-sdk";
 
-const sms = new MagFa("", "", "", "");
+const sms = new MagFa(
+  "sandogh_85420",
+  "AShILO4GGzMpXnPN",
+  "magfa",
+  "98300085420"
+);
 
 // Send
 // --------------------------
 
-const recipients = ["09014784362", "09363158232"];
-const messages = ["سلام", "سلام"];
+// const recipients = ["09363158232"];
+// const messages = ["سلام"];
 
-const send = await sms.send(recipients, messages);
+// const send = await sms.send(recipients, messages);
 
-if (send.status === 0) {
-  console.log(send.messages);
-} else {
-  console.log({ message: sms.error(send.status) });
-}
+// if (send.status === 0) {
+//   console.log(send.messages);
+// } else {
+//   console.log({ message: sms.error(send.status) });
+// }
 
 // Read
 // --------------------------
@@ -30,7 +35,7 @@ if (send.status === 0) {
 // Status
 // --------------------------
 
-const status = await sms.status("120990667412");
+const status = await sms.status("120992645612");
 
 if (status.status === 0) {
   console.log(status.dlrs);
@@ -41,10 +46,10 @@ if (status.status === 0) {
 // Balance
 // --------------------------
 
-const balance = await sms.balance();
+// const balance = await sms.balance();
 
-if (balance.status === 0) {
-  console.log({ balance: balance.balance });
-} else {
-  console.log({ message: sms.error(balance.status) });
-}
+// if (balance.status === 0) {
+//   console.log({ balance: balance.balance });
+// } else {
+//   console.log({ message: sms.error(balance.status) });
+// }
