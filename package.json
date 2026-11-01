@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/BlackIQ/magfa-sdk.git"
+    "url": "git+https://gitlab.com/blackiq-packages/npm/magfa-sdk.git"
   },
   "keywords": [
     "SDK",
@@ -21,10 +21,7 @@
   ],
   "author": "Amirhossein Mohammadi",
   "license": "MIT",
-  "bugs": {
-    "url": "https://gitlab.com/BlackIQ/magfa-sdk/issues"
-  },
-  "homepage": "https://gitlab.com/BlackIQ/magfa-sdk#readme",
+  "homepage": "https://gitlab.com/blackiq-packages/npm/magfa-sdk",
   "dependencies": {
     "axios": "^0.27.2"
   }
