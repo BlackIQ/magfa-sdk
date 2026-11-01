@@ -4,25 +4,26 @@
   "description": "MagFa SMS System SDK",
   "main": "index.js",
   "type": "module",
-  "directories": {
-    "lib": "lib"
-  },
+  "author": "Amirhossein Mohammadi",
+  "license": "MIT",
   "scripts": {
     "test": "node index.js"
   },
+  "homepage": "https://gitlab.com/blackiq-packages/npm/magfa-sdk",
   "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/blackiq-packages/npm/magfa-sdk.git"
+    "url": "git+https://gitlab.com/blackiq-packages/npm/magfa-sdk.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/blackiq-packages/npm/magfa-sdk/-/issues",
+    "email": "bugs@amirhossein.info"
+  },
+  "dependencies": {
+    "axios": "^1.21.0"
   },
   "keywords": [
     "SDK",
     "SMS",
     "MagFa"
-  ],
-  "author": "Amirhossein Mohammadi",
-  "license": "MIT",
-  "homepage": "https://gitlab.com/blackiq-packages/npm/magfa-sdk",
-  "dependencies": {
-    "axios": "^1.21.0"
-  }
+  ]
 }
