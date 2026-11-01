@@ -4,7 +4,7 @@ const sms = new MagFa(
   "sandogh_85420",
   "AShILO4GGzMpXnPN",
   "magfa",
-  "98300085420"
+  "98300085420",
 );
 
 // Send
@@ -35,13 +35,13 @@ const sms = new MagFa(
 // Status
 // --------------------------
 
-const status = await sms.status("120992645612");
+// const status = await sms.status("120992645612");
 
-if (status.status === 0) {
-  console.log(status.dlrs);
-} else {
-  console.log({ message: sms.error(status.status) });
-}
+// if (status.status === 0) {
+//   console.log(status.dlrs);
+// } else {
+//   console.log({ message: sms.error(status.status) });
+// }
 
 // Balance
 // --------------------------
