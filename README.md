@@ -1,4 +1,4 @@
-# MagfaSMS Js Package
+# MagfaSMS
 
 JavaScript SDK for the MagFa SMS API.
 

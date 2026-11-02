@@ -1,4 +1,4 @@
-# MagFa SDK
+# MagfaSMS SDK
 
 JavaScript client for the [MagFa](https://www.magfa.com) SMS HTTP API.
 
@@ -14,10 +14,10 @@ const balance = await sms.balance();
 console.log(balance);
 ```
 
-|            |                                                                        |
-| ---------- | ---------------------------------------------------------------------- |
-| **npm**    | [npmjs.com/package/magfa-sdk](https://www.npmjs.com/package/magfa-sdk) |
-| **Source** | [GitLab](https://gitlab.com/blackiq-packages/npm/magfa-sdk)            |
+|        |                                                                        |
+| ------ | ---------------------------------------------------------------------- |
+| npm    | [npmjs.com/package/magfa-sdk](https://www.npmjs.com/package/magfa-sdk) |
+| Source | [GitLab](https://gitlab.com/blackiq-packages/npm/magfa-sdk)            |
 
 ## Next
 
