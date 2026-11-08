@@ -20,7 +20,7 @@ await sms.send(["0912xxxxxxx"], ["Hello"]);
 
 ## Docs
 
-[magfasms.amirhossein.info](https://magfasms.amirhossein.info)
+[magfasms.docs.amirhossein.info](https://magfasms.docs.amirhossein.info)
 
 ## Links
 

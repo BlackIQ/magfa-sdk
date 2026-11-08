@@ -1,6 +1,6 @@
 site_name: MagfaSMS Docs
 site_description: Official MagfaSMS Package documentation
-site_url: https://magfasms.amirhossein.info
+site_url: https://magfasms.docs.amirhossein.info
 
 repo_url: https://gitlab.com/blackiq-packages/npm/magfa-sdk
 repo_name: amirhossein/magfa
