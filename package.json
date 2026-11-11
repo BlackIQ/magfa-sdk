@@ -9,13 +9,13 @@
   "scripts": {
     "test": "node index.js"
   },
-  "homepage": "https://gitlab.com/blackiq-packages/npm/magfa-sdk",
+  "homepage": "https://github.com/BlackIQ/magfa-sdk",
   "repository": {
-    "url": "git+https://gitlab.com/blackiq-packages/npm/magfa-sdk.git",
+    "url": "git+https://github.com/BlackIQ/magfa-sdk.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://gitlab.com/blackiq-packages/npm/magfa-sdk/-/issues",
+    "url": "https://github.com/BlackIQ/magfa-sdk/issues",
     "email": "bugs@amirhossein.info"
   },
   "dependencies": {

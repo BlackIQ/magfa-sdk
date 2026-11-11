@@ -17,7 +17,7 @@ console.log(balance);
 |        |                                                                        |
 | ------ | ---------------------------------------------------------------------- |
 | npm    | [npmjs.com/package/magfa-sdk](https://www.npmjs.com/package/magfa-sdk) |
-| Source | [GitLab](https://gitlab.com/blackiq-packages/npm/magfa-sdk)            |
+| Source | [GitHub](https://github.com/BlackIQ/magfa-sdk)                         |
 
 ## Next
 
