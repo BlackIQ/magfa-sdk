@@ -201,7 +201,7 @@ wheels = [
 ]
 
 [[package]]
-name = "magfa-sdk"
+name = "magfasms-docs"
 version = "0.1.0"
 source = { virtual = "." }
 

@@ -1,5 +1,5 @@
 [project]
-name = "magfa-sdk"
+name = "magfasms-docs"
 version = "0.1.0"
 description = "JavaScript SDK for the MagFa SMS provider"
 readme = "README.md"
