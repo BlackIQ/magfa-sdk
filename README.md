@@ -20,14 +20,15 @@ await sms.send(["0912xxxxxxx"], ["Hello"]);
 
 ## Docs
 
-[magfasms.docs.amirhossein.info](https://magfasms.docs.amirhossein.info)
+Full documentation: [magfasms.docs.amirhossein.info](https://magfasms.docs.amirhossein.info)
 
 ## Links
 
-|        |                                                   |
+| Title  | URL                                               |
 | ------ | ------------------------------------------------- |
 | npm    | https://www.npmjs.com/package/magfa-sdk           |
 | Source | https://gitlab.com/blackiq-packages/npm/magfa-sdk |
+| Docs   | https://magfasms.docs.amirhossein.info            |
 
 ## License
 
