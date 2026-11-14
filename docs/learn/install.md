@@ -1,11 +1,11 @@
 # Install
 
+Install **MagfaSMS SDK** using NPM.
+
 ```bash
 npm install magfa-sdk
 ```
 
-```javascript
-import MagFa from "magfa-sdk";
-```
+Dependencies:
 
-Dependency: `axios` (installed automatically).
+- `axios` (installed automatically)
