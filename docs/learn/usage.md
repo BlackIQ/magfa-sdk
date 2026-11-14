@@ -15,7 +15,9 @@ const sms = new MagFa(
 
 Auth is sent as HTTP Basic: `username/domain` + `password` against `https://sms.magfa.com/api/http/sms/v2`.
 
-## Functions and how to use them
+## API References
+
+Here are all you need about functions, errors and how to use them.
 
 ### Balance
 
