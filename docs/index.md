@@ -1,6 +1,6 @@
 # MagfaSMS SDK
 
-JavaScript client for the [MagFa](https://www.magfa.com) SMS HTTP API.
+The first JavaScript client for the [MagFa SMS](https://www.magfa.com) SMS HTTP API.
 
 Send messages, check balance, read inbox, and query delivery status with a small async API.
 
@@ -14,7 +14,7 @@ const balance = await sms.balance();
 console.log(balance);
 ```
 
-|        |                                                                        |
+| Title  | URL                                                                    |
 | ------ | ---------------------------------------------------------------------- |
 | npm    | [npmjs.com/package/magfa-sdk](https://www.npmjs.com/package/magfa-sdk) |
 | Source | [GitHub](https://github.com/BlackIQ/magfa-sdk)                         |

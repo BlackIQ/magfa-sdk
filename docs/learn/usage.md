@@ -13,10 +13,13 @@ const sms = new MagFa(
 );
 ```
 
-Auth is sent as HTTP Basic: `username/domain` + `password` against  
-`https://sms.magfa.com/api/http/sms/v2`.
+Auth is sent as HTTP Basic: `username/domain` + `password` against `https://sms.magfa.com/api/http/sms/v2`.
 
-## Balance
+## Functions and how to use them
+
+### Balance
+
+Get your account balance.
 
 ```javascript
 const result = await sms.balance();
@@ -28,7 +31,9 @@ if (result.status === 0) {
 }
 ```
 
-## Send
+### Send
+
+Send a message.
 
 `recipients` and `messages` are parallel arrays (same length). Sender is filled from the `from` you passed to the constructor.
 
@@ -43,7 +48,9 @@ console.log(result.messages);
 // each item includes status and a human-readable message on success/error
 ```
 
-## Inbox (incoming)
+### Inbox (incoming)
+
+Get messages in your inbox.
 
 ```javascript
 const result = await sms.messages();
@@ -55,7 +62,9 @@ if (result.status === 0) {
 }
 ```
 
-## Delivery status
+### Delivery status
+
+Check delivery status. Is it delivered, on the way or had issues.
 
 ```javascript
 const result = await sms.status(messageId);
@@ -63,7 +72,9 @@ const result = await sms.status(messageId);
 console.log(result.dlrs); // status text attached per DLR
 ```
 
-## Errors
+### Errors
+
+A usefull helper to pass error status code and get error message.
 
 ```javascript
 sms.error(statusCode); // Persian description for MagFa status codes
